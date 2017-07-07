@@ -1,0 +1,27 @@
+doctype html
+html
+  head
+    script(src="script.js")
+  body
+  div
+    form(action='/getaddr',method='post')
+      .input-line
+        label(for='street-address') Address
+        input#street-address(type='text', placeholder='Street address', autofocus='')
+      .input-line
+        label(for='street-address2')
+        input#street-address2(type='text', placeholder='')
+      .input-line
+        label(for='city')
+        input#city(type='text', placeholder='City')
+      .input-line
+        label(for='state')
+        input#state(type='text', placeholder='State/Province')
+      .input-line
+        label(for='postcode')
+        input#postcode(type='text', placeholder='Zip/Postcode')
+      .input-line
+        label(for='country')
+        input#country(type='text', placeholder='Country')
+      div(data-role='fieldcontain')
+        input(type='submit',value='Submit',data-transition='fade', data-theme='c')
